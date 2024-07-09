@@ -1,26 +1,32 @@
-Based on the code changes and commit messages in the pull request, here is a summary of the updates made:
+# AI for Developer Productivity: Technical Writer Agent
 
-1. **.github/workflows/update_readme.yaml**:
-   - Added a step to extract PR Number and Commit SHA from the GitHub event context.
-   - Added a step to generate an updated README using a Python script (`main.py`).
-   - Environment variables like `OPENAI_API_KEY`, `GITHUB_TOKEN`, `REPO_PATH`, `PR_NUMBER`, and `COMMIT_SHA` are passed to the Python script.
+## Overview
+In this project, we developed a **Technical Writer Agent** to enhance developer productivity. The core functionality of our agent leverages Retrieval-Augmented Generation (RAG) to dynamically update and refine technical documentation. This innovative approach not only streamlines the documentation process but also ensures that it remains accurate, up-to-date, and contextually relevant.
 
-2. **.gitignore**:
-   - Added `venv` to the `.gitignore` file to exclude the virtual environment directory.
+## Now It's Your Turn!
+Embrace your creativity and personalize this project to craft a solution that uniquely addresses the challenges and inefficiencies you face in your own environment. After seeing what our Technical Writer Agent can do, it’s time for you to take the reins. Use the foundation we’ve built and apply it to a challenge you face in your own professional or personal environment. Here’s how you can get started:
 
-3. **requirements.txt**:
-   - Updated dependencies versions, added new dependencies like `jsonpatch`, `langchain-core`, `langchain-openai`, `langsmith`, `orjson`, `packaging`, `pydantic`, `pydantic_core`, `PyYAML`, `regex`, `tenacity`, and `tiktoken`.
+### Minimum Requirements
+1. **RAG Integration:** Successfully integrate Retrieval-Augmented Generation (RAG) to enable your agent to access and utilize external information when generating responses.
+2. **Vector Database Implementation:** Create and implement a vector data store capable of embedding and retrieving documents, ensuring that the system can access necessary information efficiently.
 
-4. **utility.py**:
-   - Updated the `format_data_for_openai` and `call_openai` functions to use `langchain_openai` and added error handling for OpenAI API calls.
-   - Updated the `update_readme_and_create_pr` function to submit updated README content as a PR in a new branch with a relevant commit message and PR title.
+### Stretch Goals
+1. **Enhanced UI/UX:** Develop a more advanced and user-friendly interface that includes features such as real-time suggestions, auto-completion of content, and a more interactive documentation process.
+2. **Automated Content Updates:** Implement a feature where the agent periodically checks and updates existing documentation based on new information or changes in the relevant field, ensuring that all documentation remains current without manual intervention.
+3. **Integration with Existing Tools:** Develop integrations for the agent with commonly used development tools and platforms (e.g., Confluence, Jira, Notion) to streamline workflows and increase accessibility.
+4. **Add The Features You Want**: Let your creativity shine by adding a unique feature that significantly simplifies or enhances your daily routines. Innovate with functionalities that solve problems and improve efficiency or satisfaction in meaningful ways.
 
-5. **Commit Message**:
-   - The commit message indicated updating the README to include that GPT-3.5 is the model being used to generate READMEs.
+## Privacy and Submission Guidelines
+- **Submission Requirements:** Please submit a link to your public repo with your implementation or a loom video showcasing your work on the [BloomTech AI Platform](app.bloomtech.com).
+- **Sensitive Information:** If your implementation involves sensitive information, you are not required to submit a public repository. Instead, a detailed review of your project through a Loom video is acceptable, where you can demonstrate the functionality and discuss the technologies used without exposing confidential data.
 
-6. **Current README Content**:
-   - The existing README file content is provided for reference.
+---
 
-Based on the updates and the provided README content, the README file likely needs to be updated to reflect the changes made in the code and to include information about using GPT-3.5 for generating README files. The Python script in the workflow likely generates an updated README based on the code changes and commit messages.
+Based on the recent code changes and commit messages:
+- The workflow now includes steps to extract PR Number and Commit SHA and generate an updated README using Python script.
+- The `.gitignore` now excludes the virtual environment directory.
+- Updated dependencies in `requirements.txt` and added new dependencies.
+- Updated functions in `utility.py` for OpenAI API calls and PR submission.
+- README likely needs to mention the use of GPT-3.5 for README generation.
 
-If you run into any issues or need further assistance, feel free to ask!
+If you have any questions or need further assistance, feel free to ask!
